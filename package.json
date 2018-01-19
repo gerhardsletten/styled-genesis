@@ -1,6 +1,6 @@
 {
   "name": "styled-genesis",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A styled-component base which gives your component props based css capabilities",
   "main": "lib/index.js",
   "scripts": {
