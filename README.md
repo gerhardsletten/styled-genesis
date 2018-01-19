@@ -16,7 +16,7 @@ In your component:
 import React from 'react'
 import El from 'styled-genesis'
 
-const Container = StyledGenesis.withComponent('h1')
+const Container = El.withComponent('h1')
 
 const Title = (props) => <Container mb={1} color='primary' size='large' {...props} />
 
