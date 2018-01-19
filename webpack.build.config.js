@@ -4,7 +4,6 @@ var webpack = require('webpack')
 module.exports = {
   entry: {
     main: [
-      'babel-polyfill',
       './demo/index'
     ]
   },
