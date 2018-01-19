@@ -107,19 +107,19 @@ background-color as string or predefined colors in `theme.colors`
 
 ### Display (string)
 
-nlock, inline-block, flex, etc
+block, inline-block, flex, etc
 
 * d - display
 
 ### Flexbox (string)
 
-block, inline-block, flex, inline-flex etc
+Additional flex-properties
 
 * flex - bool or string
 * alignItems - string
 * justifyContent - string
 
-## Demo [todo]
+## Demo
 
 [See demo](http://gerhardsletten.github.io/styled-genesis/)
 
