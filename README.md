@@ -8,7 +8,7 @@ A styled-component base which gives your component props based css capabilities
 
 ## Usage ##
 
-Define your component:
+In your component:
 
 ```
 import React from 'react'
@@ -22,11 +22,12 @@ export default Title
 
 ```
 
-Can be used this way:
+Later on, while using the component:
 
 ```
+import React from 'react'
 import {ThemeProvider} from 'styled-components'
-import App from './App'
+import Title from './Title'
 
 const theme = {
   colors: {
@@ -42,7 +43,7 @@ const theme = {
   }
 }
 
-const ThemedApp = () => {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div>
@@ -55,9 +56,6 @@ const ThemedApp = () => {
 }
 
 ```
-
-
-
 
 ## Supported properties
 
