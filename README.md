@@ -4,13 +4,15 @@ A styled-component base which gives your component props based css capabilities
 
 ## Usage ##
 
-`npm i styled-genesis --save`
+```jsx
+npm i styled-genesis --save
+```
 
 ## Usage ##
 
 In your component:
 
-```
+```jsx
 import React from 'react'
 import El from 'styled-genesis'
 
@@ -24,7 +26,7 @@ export default Title
 
 Later on, while using the component:
 
-```
+```jsx
 import React from 'react'
 import {ThemeProvider} from 'styled-components'
 import Title from './Title'
@@ -127,7 +129,7 @@ block, inline-block, flex, inline-flex etc
 
 Next step should be to support responsive rules but at a custom import so you don't have to load extra if you are on the mobile first wagon.
 
-```
+```jsx
 import El from 'styled-genesis/lib/responsive'
 
 <El d='block' xs-d='inline-block'>
