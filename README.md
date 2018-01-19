@@ -83,13 +83,13 @@ Size as number or predefined sizes in `theme.sizes`
 
 ### Color (String)
 
-Text-color as string or predefined sizes in `theme.colors`
+Text-color as string or predefined colors in `theme.colors`
 
 * color - text-color
 
 ### Bg (String)
 
-background-color as string or predefined sizes in `theme.colors`
+background-color as string or predefined colors in `theme.colors`
 
 * bg - background-color
 
