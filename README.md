@@ -21,7 +21,6 @@ const Container = StyledGenesis.withComponent('h1')
 const Title = (props) => <Container mb={1} color='primary' size='large' {...props} />
 
 export default Title
-
 ```
 
 Later on, while using the component:
@@ -56,7 +55,6 @@ const App = () => {
     </ThemeProvider>
   )
 }
-
 ```
 
 ## Supported properties
@@ -135,7 +133,6 @@ import El from 'styled-genesis/lib/responsive'
 <El d='block' xs-d='inline-block'>
   I'm inline on desktop but block on your phone!
 </El>
-
 ```
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
