@@ -77,14 +77,6 @@ const ThemedApp = () => {
 * pb - padding-bottom
 * pl - padding-left
 
-### Padding (Number)
-
-* p - padding
-* pt - padding-top
-* pr - padding-right
-* pb - padding-bottom
-* pl - padding-left
-
 ### Size (String / Number)
 
 Size as number or predefined sizes in `theme.sizes`
