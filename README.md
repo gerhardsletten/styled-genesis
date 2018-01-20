@@ -2,7 +2,7 @@
 
 A styled-component base which gives your component props based css capabilities
 
-## Usage ##
+## Install ##
 
 ```jsx
 npm i styled-genesis --save
@@ -10,51 +10,49 @@ npm i styled-genesis --save
 
 ## Usage ##
 
-In your component:
+Your Title.js component
 
 ```jsx
 import React from 'react'
 import El from 'styled-genesis'
 
-const Container = El.withComponent('h1')
+const Container = El.withComponent('h1').extend`
+  // you can add styles here..
+`
 
-const Title = (props) => <Container mb={1} color='primary' size='large' {...props} />
-
-export default Title
-```
-
-Later on, while using the component:
-
-```jsx
-import React from 'react'
-import {ThemeProvider} from 'styled-components'
-import Title from './Title'
-
-const theme = {
-  colors: {
-    gray: '#999',
-    text: '#000',
-    primary: '#00AEEE',
-    secondary: '#FF931E'
-  },
-  sizes: {
-    small: 1.6,
-    normal: 1.8,
-    large: 2.4
-  }
-}
-
-const App = () => {
+const Title = (props) => {
   return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <Title>Default title</Title>
-        <Title color='secondary'>Title with secondary color from theme.colors.secondary</Title>
-        <Title color='secondary' mt={2}>Title with margin-top: 2rem</Title>
-      </div>
-    </ThemeProvider>
+    <Container
+       // .. or define overrideable styles here
+      mb={1} // margin-bottom: 1rem
+      color='primary' // text-color from theme.colors or a hex-value
+      size='large' // font-size from theme.sizes or a number: 2 will become font-size: 2rem;
+      // .. and override and aditional props here
+      {...props}
+    />
   )
 }
+
+// You can now adjust its css props where you need it to behave different
+<Title color='secondary' center mt={2}>
+  Centered Title with secondary theme color, text-align: center og margin-top: 2rem
+</Title>
+```
+
+## Create your own wrapper with additonal props ##
+
+Wrap this module and extend even further:
+
+```jsx
+import El from 'styled-genesis'
+
+const MyStyledGenesis = El.extend`
+  ${props => props.float ? `float: ${props.float};` : ''}
+`
+// <MyStyledGenesis float='left' /> <-- float: left;
+
+export default MyStyledGenesis
+
 ```
 
 ## Supported properties
